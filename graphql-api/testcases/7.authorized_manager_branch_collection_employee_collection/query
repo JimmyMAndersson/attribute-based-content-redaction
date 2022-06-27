@@ -1,0 +1,12 @@
+query {
+  branches {
+    country
+    state
+    city
+    employees {
+      firstName
+      lastName
+      salary
+    }
+  }
+}

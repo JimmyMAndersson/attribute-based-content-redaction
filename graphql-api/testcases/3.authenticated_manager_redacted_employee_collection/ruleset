@@ -1,0 +1,14 @@
+{
+    "Query": {
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "redacted",
+            "element_filter": "(user.title.contains('Manager') && user.branch == element.branch) || user.title == 'CEO'"
+        }
+    },
+    "User": {
+        "salary": {
+            "read": "(user.title.contains('Manager') && user.branch == object.branch) || user.title == 'CEO'"
+        }
+    }
+}

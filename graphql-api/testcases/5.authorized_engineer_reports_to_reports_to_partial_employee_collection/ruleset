@@ -1,0 +1,20 @@
+{
+    "Query": {
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "partial",
+            "element_filter": "user.isAuthenticated && (user.branch == element.branch || user.title.contains('Manager') || user.title == 'CEO')"
+        }
+    },
+    "User": {
+        "firstName": {
+					read: "user.isAuthenticated"
+				},
+				"lastName": {
+					read: "user.isAuthenticated"
+				},
+				"reportsTo": {
+					read: "user.isAuthenticated && user.branch == object.branch"
+				}
+    }
+}

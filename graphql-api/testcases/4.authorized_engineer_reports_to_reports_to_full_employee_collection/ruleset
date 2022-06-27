@@ -1,0 +1,19 @@
+{
+    "Query": {
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "full"
+        }
+    },
+    "User": {
+        "firstName": {
+					read: "user.isAuthenticated"
+				},
+				"lastName": {
+					read: "user.isAuthenticated"
+				},
+				"reportsTo": {
+					read: "user.isAuthenticated && user.branch == object.branch"
+				}
+    }
+}

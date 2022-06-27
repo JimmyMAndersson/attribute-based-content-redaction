@@ -1,0 +1,37 @@
+{
+    "Query": {
+        "branches": {
+            "read": "true",
+            "collection_policy": "full"
+        }
+    },
+    "Branch": {
+        "id": {
+            "read": "user.isAuthenticated"
+        },
+        "country": {
+            "read": "true"
+        },
+        "state": {
+            "read": "true"
+        },
+        "city": {
+            "read": "true"
+        },
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "full"
+        }
+    },
+    "User": {
+        "firstName": {
+            "read": "user.isAuthenticated"
+        },
+        "lastName": {
+            "read": "user.isAuthenticated"
+        },
+        "salary": {
+            "read": "user.isAuthenticated && user.branch == object.branch && user.title.contains('Manager')"
+        }
+    }
+}

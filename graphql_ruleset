@@ -1,0 +1,54 @@
+{
+    "Query": {
+        "branches": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "partial",
+            "element_filter": "user.isAuthenticated"
+        },
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "partial",
+            "element_filter": "user.isAuthenticated"
+        },
+        "branch": {
+            "read": "user.isAuthenticated",
+        }
+    },
+    "Employee": {
+        "firstName": {
+            "read": "user.isAuthenticated"
+        },
+        "lastName": {
+            "read": "user.isAuthenticated"
+        },
+        "id": {
+            "read": "user.isAuthenticated"
+        },
+        "branch": {
+            "read": "user.isAuthenticated"
+        },
+        "salary": {
+            "read": "user.isAuthenticated"
+        },
+        "reportsTo": {
+            "read": "user.isAuthenticated"
+        },
+        "securityClearance": {
+            "read": "user.isAuthenticated"
+        },
+    },
+    "Branch": {
+        "id": {
+            "read": "user.isAuthenticated"
+        },
+        "country": {
+            "read": "user.isAuthenticated"
+        },
+        "state": {
+            "read": "user.isAuthenticated"
+        },
+        "city": {
+            "read": "user.isAuthenticated"
+        }
+    }
+}

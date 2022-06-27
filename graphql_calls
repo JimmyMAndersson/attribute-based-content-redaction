@@ -1,0 +1,24 @@
+/branches,query { branches { id country state city } }
+/branches/1,query { branch(id:1) { id country state city } }
+/branches/1/employees,query { branch(id:1) { employees { id firstName lastName branch { id country state city } } } }
+/branches/2/employees,query { branch(id:2) { employees { id firstName lastName branch { id country state city } } } }
+/branches/3/employees,query { branch(id:3) { employees { id firstName lastName branch { id country state city } } } }
+/branches/4/employees,query { branch(id:4) { employees { id firstName lastName branch { id country state city } } } }
+/branches/5/employees,query { branch(id:5) { employees { id firstName lastName branch { id country state city } } } }
+/branches/6/employees,query { branch(id:6) { employees { id firstName lastName branch { id country state city } } } }
+/branches/7/employees,query { branch(id:7) { employees { id firstName lastName branch { id country state city } } } }
+/branches/8/employees,query { branch(id:8) { employees { id firstName lastName branch { id country state city } } } }
+/branches/9/employees,query { branch(id:9) { employees { id firstName lastName branch { id country state city } } } }
+/branches/10/employees,query { branch(id:10) { employees { id firstName lastName branch { id country state city } } } }
+/branches/11/employees,query { branch(id:11) { employees { id firstName lastName branch { id country state city } } } }
+/branches/12/employees,query { branch(id:12) { employees { id firstName lastName branch { id country state city } } } }
+/branches/13/employees,query { branch(id:13) { employees { id firstName lastName branch { id country state city } } } }
+/branches/14/employees,query { branch(id:14) { employees { id firstName lastName branch { id country state city } } } }
+/branches/15/employees,query { branch(id:15) { employees { id firstName lastName branch { id country state city } } } }
+/branches/16/employees,query { branch(id:16) { employees { id firstName lastName branch { id country state city } } } }
+/branches/17/employees,query { branch(id:17) { employees { id firstName lastName branch { id country state city } } } }
+/branches/18/employees,query { branch(id:18) { employees { id firstName lastName branch { id country state city } } } }
+/branches/19/employees,query { branch(id:19) { employees { id firstName lastName branch { id country state city } } } }
+/branches/20/employees,query { branch(id:20) { employees { id firstName lastName branch { id country state city } } } }
+/employees,query { employees { id firstName lastName branch { id country state city } } }
+/employees/1,query { employee(id:1) { id firstName lastName branch { id country state city } } }

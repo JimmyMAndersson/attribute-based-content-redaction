@@ -1,0 +1,14 @@
+query {
+  employees {
+    firstName
+		lastName
+		reportsTo {
+			firstName
+			lastName
+			reportsTo {
+				firstName
+				lastName
+			}
+		}
+  }
+}

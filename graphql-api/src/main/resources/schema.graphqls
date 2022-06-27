@@ -1,0 +1,25 @@
+type Query {
+    branches: [Branch]
+    employees: [Employee]
+    branch(id: Int): Branch
+    employee(id: Int): Employee
+}
+
+type Branch {
+    id: ID
+    country: String
+    state: String
+    city: String
+    employees: [Employee]
+}
+
+type Employee {
+    id: ID
+    firstName: String
+    lastName: String
+    title: String
+    reportsTo: Employee
+    securityClearance: Int
+    branch: Branch
+    salary: Int
+}

@@ -1,0 +1,34 @@
+{
+    "Query": {
+        "branches": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "redacted",
+            "element_filter": "user.isAuthenticated"
+        },
+        "employees": {
+            "read": "user.isAuthenticated",
+            "collection_policy": "partial",
+            "element_filter": "user.branch == element.branch && element.salary > 6500000"
+        },
+        "branch": {
+            "read": "user.isAuthenticated"
+        },
+        "employee": {
+            "read": "user.isAuthenticated"
+        }
+    },
+    "Employee": {
+        "firstName": {
+            "read": "user.isAuthenticated"
+        },
+        "lastName": {
+            "read": "user.isAuthenticated"
+        },
+        "salary": {
+            "read": "user.id == object.id || user.title.contains('Manager')"
+        },
+        "reportsTo": {
+            "read": "user.isAuthenticated"
+        }
+    }
+}

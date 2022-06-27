@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "graphql.server-type",
+      "type": "se.applyn.graphqlapi.ServerType",
+      "defaultValue": "NO_AC"
+    }
+  ]
+}
