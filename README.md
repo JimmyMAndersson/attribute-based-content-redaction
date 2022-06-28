@@ -99,7 +99,7 @@ A `jar` file can now be found in the `build/libs` directory.
 
 # Executing a Jar File
 
-Executing the `jar` file produced in the precious section requires passing a few parameters.
+Executing the `jar` file produced in the previous section requires passing a few parameters.
 
 * __graphql.server-type__ specifies the type of server to spin up. This takes any of the `<servertype>` arguments discussed in [Starting a GraphQL Server](/README.md#starting-a-graphql-server) (_noac_ or _abacredaction_).
 
